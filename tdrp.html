@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="tdrp.css">
 </head>
 <body>
 
@@ -12,52 +12,6 @@
         <h1 id="name">name will be here</h1>
         <img src="haruka.PNG" alt="character sprite" id="image"> <br>
         <button id="getbutton">get a tetro buddy</button>
-
-        <style>
-            body{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    min-height: 100vh; margin: 0;
-    flex-direction: column;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#getbutton{
-    border: 2px solid rgb(163, 81, 143);
-    border-radius: 20px;
-    width: 200px; height: 50px;
-    background-color: pink;
-    font-size: large;
-    color: rgb(58, 40, 52);
-}
-#getbutton:hover{
-    background-color: rgb(163, 81, 143);
-}
-#image{
-    width: 300px; height: 400px;
-}
-        </style>
-        <script>
-        let studentindex;
-            let students = [
-                "Isono Miki","Harada Keizou","Chiba Airi","Kamimura Kazutoshi",
-                "Hayashi Mai","Wada Masanari","Sasaki Hitomi","Ojima Takeshi",
-                "Okazaki Hanano","Hama Ran","Tsuno Manami","Hiroaki Nakamigawa",
-                "Tamba Ruiko","Hasegawa Ken","Watari Nishino","Yanagi Shigeki"
-            ];
-            let img1;
-            let imgs = [
-                "st1 (1).png","st2 (1).png","st3 (1).png","st4 (1).png",
-                "st5 (1).png","st6 (1).png","st7.png","st8.png",
-                "st9.png","st10.png","st11.png","st12.png",
-                "st13.png","st14.png","st15.png","st16.png"
-            ];
-            console.log("script loaded");
-            document.getElementById("getbutton").addEventListener("click", function() {
-                studentindex = Math.floor(Math.random() * (15 - 0 + 1)) + 0;
-                img1 = studentindex;
-                document.getElementById("name").textContent = students[studentindex];
-                document.getElementById("image").src = imgs[img1];
-            });</script>
+    <script src="tdrp.js"></script>
 </body>
 </html>
